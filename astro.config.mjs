@@ -7,6 +7,7 @@ import tailwind from "@astrojs/tailwind";
 export default defineConfig({
   integrations: [tailwind(), preact()],
   buildOptions: {
-    site: "https://r-yokoyama-cft.github.io/"
+    site: "https://r-yokoyama-cft.github.io/",
+    base: "https://github.com/r-yokoyama-cft/2310_gtm_sample"
   },
 });
