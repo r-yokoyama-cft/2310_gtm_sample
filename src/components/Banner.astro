@@ -2,12 +2,13 @@
 interface Props {
 	title: string;
 	href: string;
+  id: string;
 }
 
-const { href, title } = Astro.props;
+const { href, title, id } = Astro.props;
 ---
 
-<a href={href}>{title}</a>
+<a href={href} id={id}>{title}</a>
 <style>
   a {
     @apply flex justify-center items-center border-2 rounded p-8 mt-10 dark:hover:bg-white hover:bg-slate-800 dark:hover:text-slate-800 hover:text-white dark:border-white border-slate-800 duration-200;
